@@ -8,13 +8,13 @@ square.setAttribute('id','boxes');
 let numBox = 101;
 let tmpHtml = '';
 // ciclo for per creare i 100 quadrati
-for(let i = 0; i < numBox; i++){
+for(let i = 1; i < numBox; i++){
     if(i % 3 == 0 && i % 5 == 0){
-        tmpHtml += ` <div class="box fizzbuzz-box">${i}</div>`;
+        tmpHtml += ` <div class="box fizzbuzz-box">fizzbuzz</div>`;
     } else if(i % 3 == 0){
-        tmpHtml += ` <div class="box fizz-box">${i}</div>`;
+        tmpHtml += ` <div class="box fizz-box">fizz</div>`;
     } else if(i % 5 == 0){
-        tmpHtml += ` <div class="box buzz-box">${i}</div>`;
+        tmpHtml += ` <div class="box buzz-box">buzz</div>`;
     } else {
         tmpHtml += ` <div class="box">${i}</div>`;
     }
